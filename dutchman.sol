@@ -1,10 +1,13 @@
-//my first cryptocurrency
+// SPDX-License-Identifier: GPL-3.0
 
-//SPDX-LICENSE-IDENTIFIER: GPL-3.0
+//my first cryptocurrency
 pragma solidity >=0.0.5;
+
 contract dutchman{
     address public minter;
     mapping(address => uint) public balances;
+
+
     //allows client to react to a specific contract declared
     event Sent (address from, address to, uint amount);
     
